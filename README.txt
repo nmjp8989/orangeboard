@@ -1,14 +1,19 @@
-ORANGE BOARD RENOVATIONS — RESPONSIVE WEBSITE TEMPLATE
+CRAFTWELL RESPONSIVE WEBSITE TEMPLATE
 
-Open index.html to preview. Upload all eight HTML files plus the assets folder to a static website host. Keep the same folder structure.
+Open index.html in a browser to preview. All files are included and work offline.
 
-Pages: index.html, about.html, services.html, projects.html, process.html, cost-guide.html, reviews.html, contact.html.
+Includes:
+- Home, About, Services, Our Process, Projects, Why Choose Us, Reviews, Contact, Estimate
+- Nine service categories with individual detail pages
+- Responsive desktop, tablet, and phone layouts
+- Mobile navigation and gallery filtering
+- Sample interior design imagery cropped from the approved concept mockup
 
-Before publishing:
-1. Replace placeholder stock photo URLs with licensed real company images. Images currently load from Unsplash and require an internet connection.
-2. Add verified phone, email, company story, credentials, warranty, customer reviews and completed projects.
-3. Replace the mailto demo in assets/site.js with a secure hosted form endpoint. The file upload control is only visual and cannot transmit files in the demo.
-4. Verify service coverage, accessibility, privacy policy and required business disclosures.
-5. Connect a domain and deploy with HTTPS.
+BEFORE PUBLISHING:
+1. Replace the sample imagery with your own licensed photographs. These are design concepts, not real Craftwell projects.
+2. Replace REPLACE_WITH_BUSINESS_EMAIL@example.com in app.js with your verified email.
+3. Connect the estimate form to a secure form backend for actual submissions; the current version only opens an email draft.
+4. Add your verified phone number, business details, insurance/licensing claims, and authentic customer reviews.
+5. Review all service descriptions and business claims before publishing.
 
-This is a working responsive static front-end, not an installed CMS theme or a deployed website.
+For hosting, upload index.html, styles.css, app.js, and assets/ to a static hosting service.
