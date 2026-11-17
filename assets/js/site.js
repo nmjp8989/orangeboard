@@ -10,7 +10,24 @@ const header=`<header><div class="container topbar"><a class="brand" href="${sit
 const footer=`<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="${siteUrl('')}"><span class="brand-mark"><svg viewBox="0 0 60 52" fill="none"><path d="M5 28 30 5l25 23" stroke="#fff" stroke-width="6" stroke-linecap="round"/><path d="M13 25v21h34V25" stroke="#fff" stroke-width="5"/><path d="M24 45V31h12v14" stroke="#f47716" stroke-width="4"/></svg></span><span><span class="brand-name">CRAFTWELL</span><span class="brand-tag">Your build is our craft.</span></span></a><p>Renovation and construction solutions for homes and businesses across Toronto and the GTA.</p></div><div><h3>Explore</h3><div class="footer-links"><a href="${siteUrl('about/')}">About us</a><a href="${siteUrl('services/')}">Services</a><a href="${siteUrl('projects/')}">Our projects</a><a href="${siteUrl('process/')}">Our process</a><a href="${siteUrl('reviews/')}">Reviews</a></div></div><div><h3>Get in touch</h3><div class="footer-links"><a href="tel:+14165557283">(416) 555-7283</a><a href="mailto:info@craftwellrenovations.ca">info@craftwellrenovations.ca</a><span>Toronto, Ontario</span></div></div><div><h3>Hours</h3><p>Mon – Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 4:00 PM<br>Sunday: By appointment</p><a class="btn" href="${siteUrl('request-estimate/')}">Request an Estimate →</a></div></div><div class="footer-bottom"><span>© <span data-year></span> Craftwell Renovations. All rights reserved.</span><span>Serving Toronto &amp; the GTA</span></div></div></footer><a class="btn mobile-cta" href="${siteUrl('request-estimate/')}">Get a Free Estimate →</a>`;
 document.querySelectorAll('[data-site-header]').forEach(el=>el.innerHTML=header);document.querySelectorAll('[data-site-footer]').forEach(el=>el.innerHTML=footer);document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 const toggle=document.querySelector('.menu-toggle');if(toggle)toggle.addEventListener('click',()=>{const menu=document.querySelector('.nav-links'),open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰'});
-document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');const category=button.dataset.filter;document.querySelectorAll('.project').forEach(card=>card.hidden=category!=='all'&&card.dataset.category!==category)}));
+const projectFilters = [...document.querySelectorAll('.filter')];
+if (projectFilters.length) {
+  const projects = document.querySelectorAll('.project');
+  function applyProjectFilter(activeFilter) {
+    const category = activeFilter.dataset.filter;
+    projectFilters.forEach(filter => {
+      const selected = filter === activeFilter;
+      filter.classList.toggle('active', selected);
+      filter.setAttribute('aria-pressed', String(selected));
+    });
+    projects.forEach(card => {
+      card.hidden = category !== 'all' && card.dataset.category !== category;
+    });
+  }
+  projectFilters.forEach(filter => filter.addEventListener('click', () => applyProjectFilter(filter)));
+  const initialCategory = new URLSearchParams(location.search).get('category');
+  applyProjectFilter(projectFilters.find(filter => filter.dataset.filter === initialCategory) || projectFilters[0]);
+}
 document.querySelectorAll('[data-demo-form]').forEach(form=>form.addEventListener('submit',event=>{event.preventDefault();const message=form.querySelector('.form-message');if(message){message.style.display='block';message.textContent='Thank you! Your form is working in preview mode. Connect a form service to receive submissions.'}form.reset()}));
 
 const iconPaths = {
