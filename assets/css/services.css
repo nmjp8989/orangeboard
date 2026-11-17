@@ -234,3 +234,15 @@
   .services-nav-menu summary { justify-content: flex-start; }
   .services-nav-options { position: static; box-shadow: none; }
 }
+
+.renovation-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 16px;
+}
+.renovation-detail-links a {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

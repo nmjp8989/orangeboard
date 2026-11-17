@@ -55,3 +55,18 @@
 }
 
 .home-intro .hero.reference-hero::after { content: none; }
+
+.home-intro h1 { max-width: 13.5em; overflow-wrap: anywhere; }
+.detail-content { padding-block: clamp(32px, 5vw, 74px); }
+.detail-content h1 { margin-top: 16px; }
+.detail-content h2 { font-size: clamp(1.2rem, 2.5vw, 1.65rem); }
+.detail-content figure { margin: 0 0 24px; }
+.detail-content figcaption { color: var(--muted); margin-top: 8px; }
+.detail-content .grid-2 { align-items: start; margin: 22px 0; }
+@media (max-width: 650px) {
+  .home-intro h1, .reference-hero h1, .detail-content h1 {
+    font-size: clamp(1.85rem, 7vw, 2.75rem);
+    overflow-wrap: anywhere;
+  }
+  .top-meta .btn { white-space: normal; text-align: center; }
+}
