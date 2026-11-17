@@ -25,7 +25,7 @@
     .consultation-benefits svg, .consultation-phone svg { width: 36px; height: 36px; color: #b64d00; }
     .consultation-phone { display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: 700; }
     .consultation-phone svg { width: 25px; height: 25px; }
-    .consultation-form { padding: clamp(17px, 2.25vw, 34px); }
+    .consultation-form { scroll-margin-top: 16px; padding: clamp(17px, 2.25vw, 34px); }
     .consultation-form .form-grid { gap: 10px clamp(14px, 2vw, 28px); }
     .consultation-form .field { gap: 4px; min-width: 0; }
     .consultation-form .field label { font-size: 1rem; }
@@ -85,6 +85,10 @@
   <script src="../assets/js/site.js?v=shared-layout"></script>
   <script>
     const consultationForm = document.querySelector('#consultation-form');
+    document.querySelectorAll('.top-meta .btn, .mobile-cta').forEach(link => {
+      link.href = '#consultation-form';
+      link.textContent = 'Get a Free Consultation →';
+    });
     consultationForm.addEventListener('submit', event => {
       event.preventDefault();
       const lines = Array.from(new FormData(consultationForm), ([label, value]) =>
