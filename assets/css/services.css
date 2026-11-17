@@ -54,7 +54,7 @@
   position: absolute;
   z-index: -1;
   inset: 0 0 0 43%;
-  background: linear-gradient(90deg, #29231e, transparent 23%), url("../services/hero.webp") center / cover;
+  background: linear-gradient(90deg, #29231e, transparent 23%), url("../services/hero.webp?v=crisp") center / cover;
 }
 
 .services-hero-copy {
@@ -179,7 +179,7 @@
 
 @media (max-width: 650px) {
   .page-services .top-meta .btn { font-size: .78rem; }
-  .services-hero::before { left: 0; background-image: linear-gradient(90deg, #211d1be8, #211d1b75), url("../services/hero.webp"); }
+  .services-hero::before { left: 0; background-image: linear-gradient(90deg, #211d1be8, #211d1b75), url("../services/hero.webp?v=crisp"); }
   .services-hero-copy { padding-block: 30px; }
   .services-tiles { gap: 12px; }
   .service-tile h2 { padding: .55em; gap: .45em; min-height: 3.55em; }
