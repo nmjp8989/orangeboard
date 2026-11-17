@@ -1,1 +1,180 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Learn about Craftwell, a Toronto renovation and construction company."><title>About Craftwell | Toronto Renovation Contractor</title><link rel="canonical" href="https://nmjp8989.github.io/orangeboard/about/"><link rel="stylesheet" href="../assets/css/styles.css"><link rel="stylesheet" href="../assets/css/reference-pages.css?v=seo-layout"></head><body class="page-about"><div data-site-header></div><main><section class="hero page-hero reference-hero"><img class="reference-hero-image" src="../assets/reference/about.webp?v=crisp" alt="Renovated kitchen with an island and pendant lighting" fetchpriority="high"><div class="container"><div class="hero-content"><h1>A Toronto Renovation Team Built on Craft</h1><p>A trusted Toronto-based renovation company built on quality, integrity, and customer satisfaction.</p></div></div></section><section class="section"><div class="container story"><div class="story-copy"><h2>Our Story</h2><p>Craftwell is a full-service renovation and construction company serving homeowners and businesses across Toronto and the GTA.</p><p>We combine skilled craftsmanship, reliable project management, and a commitment to delivering spaces that work for your lifestyle and goals.</p></div><div class="photo-frame"><img class="photo" alt="Craftwell style renovated bathroom and vanity" src="../assets/story-bathroom.webp"></div></div></section><section class="section section-soft"><div class="container"><div class="section-head"><div><div class="eyebrow">What guides our work</div><h2>Our commitments</h2></div></div><div class="cards"><article class="card"><div class="card-body"><div class="feature-icon">✦</div><h3>Quality craftsmanship</h3><p>We pay attention to materials, details, and the finish of every space.</p></div></article><article class="card"><div class="card-body"><div class="feature-icon">◷</div><h3>Clear communication</h3><p>You know what's happening, what's next, and who to contact.</p></div></article><article class="card"><div class="card-body"><div class="feature-icon">♡</div><h3>Respect for your home</h3><p>We plan carefully and treat your property with consideration.</p></div></article></div></div></section></main><div data-site-footer></div><script src="../assets/js/site.js?v=shared-layout"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet Craftwell, a residential and commercial renovation team serving Toronto and the GTA, from the first plan to the final walkthrough.">
+  <title>About Craftwell | Toronto Renovation Contractor</title>
+  <link rel="canonical" href="https://nmjp8989.github.io/orangeboard/about/">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/reference-pages.css?v=seo-layout">
+  <style>
+    .about-content { background: #fbf7ef; --orange: #b9520a; --about-green: #173722; }
+    .about-content h1, .about-content h2, .about-content h3 {
+      font-family: Georgia, serif;
+      letter-spacing: -.035em;
+    }
+    .about-content h2 { font-size: clamp(1.9rem, 3.3vw, 2.65rem); }
+    .about-content h3 { margin-bottom: .3rem; }
+    .about-content .btn:hover { background: #984006; }
+    .about-content .hero { min-height: clamp(300px, 29vw, 430px); background: #211a13; }
+    .about-content .hero::after { background: linear-gradient(90deg, #211a13 8%, #211a13e8 29%, #211a135c 61%, transparent 85%); }
+    .about-content .reference-hero-image { width: 82%; }
+    .about-content .hero-content { padding-block: 34px; max-width: 540px; }
+    .about-content h1 { font-size: clamp(2rem, 4.15vw, 3.7rem); }
+    .about-content .hero p { max-width: 34ch; line-height: 1.35; }
+    .about-content .hero-actions { align-items: center; gap: 14px 32px; margin-top: 18px; }
+    .about-text-link { text-decoration: underline; text-underline-offset: .35em; }
+    .about-rule::after { content: ""; display: block; background: #95ab72; width: 3rem; height: 3px; margin-top: .38em; }
+    .about-facts { background: #f3ede2; padding-block: 12px; }
+    .about-facts ul, .about-services ul { list-style: none; margin-block: 0; padding: 0; }
+    .about-facts ul { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; font: bold 1.12rem Georgia, serif; }
+    .about-facts svg { width: 25px; height: 25px; margin-inline-end: 8px; vertical-align: middle; color: var(--about-green); }
+    .about-facts li + li { border-inline-start: 1px solid #bdb5a7; }
+    .about-services { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; }
+    .about-services strong { color: var(--about-green); font: bold italic 1.18rem Georgia, serif; }
+    .about-services ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px; padding: 8px 16px; border-radius: 8px; background: #ebe9db; font-weight: 700; font-size: .92rem; }
+    .about-story { display: grid; grid-template-columns: 2fr 3fr; align-items: center; gap: 24px; padding-block: 16px; }
+    .about-story img { width: 100%; height: clamp(200px, 21vw, 275px); object-fit: cover; border-radius: 8px; }
+    .about-content .eyebrow { color: var(--about-green); margin-bottom: 8px; }
+    .about-story p, .about-commitments p, .about-steps p { margin: 0; line-height: 1.4; }
+    .about-commitments, .about-steps, .about-portfolio { display: grid; gap: 14px; }
+    .about-commitments, .about-portfolio { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .about-commitments article { display: grid; grid-template-columns: auto 1fr; align-items: start; column-gap: 12px; padding: 16px; border-radius: 8px; background: #f1ebdf; }
+    .about-commitments svg { grid-row: span 2; width: 29px; height: 29px; color: var(--about-green); }
+    .about-process { padding-block: 18px 8px; }
+    .about-process .eyebrow { display: flex; align-items: center; gap: 16px; }
+    .about-process .eyebrow::after { content: ""; flex: 1; border-top: 1px solid #8b9a87; }
+    .about-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; margin: 0; list-style: none; counter-reset: phase; }
+    .about-steps li { counter-increment: phase; display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 9px; }
+    .about-steps li::before { content: counter(phase); display: grid; place-items: center; width: 1.8rem; height: 1.8rem; color: white; background: #41603c; border-radius: 50%; font-weight: 700; }
+    .about-steps p, .about-commitments p { font-size: .91rem; }
+    .about-work { padding-block: 24px; }
+    .about-section-head, .about-reviews .container { display: flex; align-items: center; gap: 14px 24px; flex-wrap: wrap; }
+    .about-section-head { margin-bottom: 14px; }
+    .about-section-head h2, .about-reviews h2 { margin: 0; }
+    .about-section-head p { margin: 0 auto 0 0; }
+    .about-portfolio .project { min-height: 0; }
+    .about-portfolio img { height: auto; aspect-ratio: 1.52; }
+    .about-portfolio span { font: bold clamp(1.1rem, 2vw, 1.5rem) Georgia, serif; }
+    .about-reviews { background: #ede5d8; padding-block: 20px; }
+    .about-reviews .container { justify-content: center; }
+    .about-consult { padding-block: 30px; background: #242220; color: #fff; scroll-margin-top: 1rem; }
+    .about-consult .container { display: grid; grid-template-columns: 1fr 2fr; gap: clamp(20px, 4vw, 50px); align-items: start; }
+    .about-consult form { border-inline-start: 1px solid #ffffff55; padding-inline-start: clamp(14px, 4vw, 40px); }
+    .about-consult .field :is(input, select, textarea) { color: #171612; background: #fbf7ef; padding: 7px 10px; }
+    .about-consult .field textarea { min-height: 62px; }
+    .about-consult .form-note { color: #e3d9cf; }
+    .about-consult .btn { width: 100%; }
+    @media (max-width: 730px) {
+      .about-story, .about-consult .container { grid-template-columns: 1fr; }
+      .about-services { flex-wrap: wrap; }
+      .about-content .reference-hero-image { width: 100%; }
+      .about-content .hero::after { background: linear-gradient(90deg, #211a13ee, #211a1399); }
+      .about-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-consult form { border: 0; padding: 0; }
+    }
+    @media (max-width: 500px) {
+      .about-content .container { width: calc(100% - 32px); }
+      .about-commitments, .about-portfolio { grid-template-columns: 1fr; }
+      .about-facts ul { font-size: .84rem; }
+      .about-facts li { padding-inline: 4px; }
+      .about-facts svg { display: block; margin: 0 auto 4px; }
+      .about-reviews .container { justify-content: start; }
+    }
+  </style>
+</head>
+<body class="page-about">
+  <div data-site-header></div>
+  <main class="about-content">
+    <section class="hero reference-hero">
+      <img class="reference-hero-image" src="../assets/reference/about.webp?v=crisp" alt="Renovated kitchen with an island and pendant lighting" fetchpriority="high">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="about-rule">Renovation done right. From first plan to final walkthrough.</h1>
+          <p>Thoughtful home and commercial renovations, built around your space, priorities and budget.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#consultation">Plan Your Project →</a>
+            <a class="about-text-link" href="../projects/">Explore our work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-facts">
+      <ul class="container"><li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Zm2-12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/></svg>Toronto &amp; GTA</li><li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l6-5 6 5M4 11v10h8V11m2 10h7V3h-9v5m4 0h2m-2 4h2m-2 4h2"/></svg>Residential &amp; Commercial</li><li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-2a5 5 0 0 1 10 0v2m3-7a5 5 0 0 1 5 5v2M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm4-3a3 3 0 1 1 0 6"/></svg>One clear point of contact</li></ul>
+    </div>
+    <div class="container about-services">
+      <strong>Serving Toronto &amp; the GTA</strong>
+      <ul aria-label="Renovation services"><li>Kitchens</li><li>Bathrooms</li><li>Basements</li><li>Whole-home</li><li>Commercial</li></ul>
+    </div>
+
+    <section class="container about-story" aria-labelledby="our-story">
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2 id="our-story">Good renovations start with listening.</h2>
+        <p>Craftwell guides clients from planning and selections through construction and finishing, with dependable communication and careful workmanship. We make the process clear and straightforward, so you can feel confident in the result.</p>
+      </div>
+      <img src="../assets/story-bathroom.webp" alt="Renovated bathroom with a vanity and walk-in shower" loading="lazy">
+    </section>
+    <div class="container about-commitments">
+      <article><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H5v16h14V5h-4m-6 0V3h6v4H9Zm0 8 2 2 4-4m-6 7h6"/></svg><h3>A plan you can understand</h3><p>A clear, detailed plan and transparent estimate, so you know what to expect.</p></article>
+      <article><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7a5 5 0 0 1 6-4l-3 3 1 2 2 1 2-3a5 5 0 0 1-6 6L7 21l-3-3 9-9Z"/></svg><h3>Craftsmanship you can see</h3><p>Skilled trades, quality materials and a close eye on the details that make a difference.</p></article>
+      <article><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h16v11H9l-5 4v-4H2Zm18 4h2v12h-3v2l-4-2h-4v-3"/></svg><h3>Communication you can count on</h3><p>A responsive, reliable team that keeps you informed and aligned from start to finish.</p></article>
+    </div>
+
+    <section class="container about-process" aria-labelledby="how-it-works">
+      <h2 class="eyebrow" id="how-it-works" style="font: inherit; font-size: .8rem; font-weight: 800; letter-spacing: .12em">How It Works</h2>
+      <ol class="about-steps">
+        <li><div><h3>Consultation</h3><p>We discuss your goals, space and priorities.</p></div></li>
+        <li><div><h3>Scope &amp; estimate</h3><p>A clear plan, selections and a detailed estimate.</p></div></li>
+        <li><div><h3>Build &amp; updates</h3><p>We bring the plan to life with regular, straightforward updates.</p></div></li>
+        <li><div><h3>Final walkthrough</h3><p>We review the work together to make sure everything is right.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="container about-work" aria-labelledby="portfolio">
+      <div class="about-section-head">
+        <h2 id="portfolio">Project Portfolio</h2>
+        <p>A look at our renovation work</p>
+        <a class="btn" href="../projects/">View Our Projects →</a>
+      </div>
+      <div class="about-portfolio">
+        <a class="project" href="../projects/"><img src="../assets/kitchen.webp" alt="" loading="lazy"><span>Kitchen Renovations</span></a>
+        <a class="project" href="../projects/"><img src="../assets/bathroom.webp" alt="" loading="lazy"><span>Bathroom Renovations</span></a>
+        <a class="project" href="../projects/"><img src="../assets/living.webp" alt="" loading="lazy"><span>Whole-home Renovations</span></a>
+      </div>
+    </section>
+
+    <section class="about-reviews">
+      <div class="container">
+        <h2>See what our clients say</h2>
+        <a class="btn" href="../reviews/">Read Client Reviews →</a>
+      </div>
+    </section>
+
+    <section class="about-consult" id="consultation" aria-labelledby="consultation-heading">
+      <div class="container">
+        <div>
+          <h2 class="about-rule" id="consultation-heading">Tell us about your project</h2>
+          <p>Ready to renovate? Tell us what you have in mind for your space.</p>
+        </div>
+        <form data-demo-form>
+          <div class="form-grid">
+            <div class="field"><label for="about-name">Your name</label><input id="about-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="about-contact">Email or phone</label><input id="about-contact" name="contact" required></div>
+            <div class="field"><label for="about-type">Project type</label><select id="about-type" name="type" required><option value="">Select a project type</option><option>Kitchen</option><option>Bathroom</option><option>Basement</option><option>Whole-home</option><option>Commercial</option><option>Other</option></select></div>
+            <div class="field"><label for="about-location">Project location</label><input id="about-location" name="location" placeholder="City or postal code" required></div>
+            <div class="field full"><label for="about-details">What are you planning?</label><textarea id="about-details" name="details" required></textarea></div>
+          </div>
+          <p class="form-note">Preview form. Your submission stays in this browser.</p>
+          <button class="btn" type="submit">Request a Free Consultation →</button>
+          <div class="form-message" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="../assets/js/site.js?v=shared-layout"></script>
+</body>
+</html>
