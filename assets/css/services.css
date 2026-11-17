@@ -200,9 +200,11 @@
   .service-row { gap: 14px; padding-block: 15px; }
   .service-commercial { padding-inline: 13px; }
   .service-photo { aspect-ratio: 1.9; }
-  .service-projects { gap: 6px; }
-  .service-project { min-height: 105px; }
-  .service-project span { padding: 7px; font-size: .88rem; }
+  .service-portfolio { margin-block: 32px 24px; }
+  .service-portfolio .service-section-heading { gap: 12px 20px; margin-bottom: 16px; }
+  .service-projects { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .service-project span { padding: 12px 14px; font-size: 1.125rem; }
+  .service-portfolio .service-caption { margin-top: 12px; }
   .service-section-heading::after { display: none; }
 }
 
