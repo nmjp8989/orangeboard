@@ -1,19 +1,30 @@
-CRAFTWELL RESPONSIVE WEBSITE TEMPLATE
+CRAFTWELL RESPONSIVE STATIC WEBSITE TEMPLATE
+============================================
 
-Open index.html in a browser to preview. All files are included and work offline.
+QUICK START
+1. Unzip the package.
+2. Open index.html in a browser to preview. For best results use a local web server (for example: python -m http.server 8000).
+3. Upload ALL contents of the craftwell-site folder to your hosting public_html / www root.
+4. Visit your domain and test desktop and mobile navigation.
 
-Includes:
-- Home, About, Services, Our Process, Projects, Why Choose Us, Reviews, Contact, Estimate
-- Nine service categories with individual detail pages
-- Responsive desktop, tablet, and phone layouts
-- Mobile navigation and gallery filtering
-- Sample interior design imagery cropped from the approved concept mockup
+PAGES INCLUDED
+Home, About Us, Services, nine individual service pages, Our Process, Projects (filterable), Why Choose Us, Reviews, Contact, Request an Estimate.
 
-BEFORE PUBLISHING:
-1. Replace the sample imagery with your own licensed photographs. These are design concepts, not real Craftwell projects.
-2. Replace REPLACE_WITH_BUSINESS_EMAIL@example.com in app.js with your verified email.
-3. Connect the estimate form to a secure form backend for actual submissions; the current version only opens an email draft.
-4. Add your verified phone number, business details, insurance/licensing claims, and authentic customer reviews.
-5. Review all service descriptions and business claims before publishing.
+IMPORTANT BEFORE GOING LIVE
+- The logo is a raster crop of your supplied image. Replace assets/craftwell-logo.jpg with a clean transparent/vector export when available, and update index.html accordingly.
+- Phone number (416) 555-7283 is a MOCKUP PLACEHOLDER and is not a verified Craftwell contact. Update index.html with your real number.
+- All renovation images were CROPPED FROM DESIGN MOCKUPS and are ILLUSTRATIVE, not proof of completed Craftwell jobs. Replace with your own licensed project photos, particularly on the Projects page.
+- The estimate form does NOT transmit or store data. It opens the visitor's email app with a draft and requires the visitor to enter the real recipient email. For real lead collection connect a backend or hosted form service and add spam protection, consent/privacy notices, and a privacy policy.
+- The photo input cannot attach images automatically to an email draft. Visitors must attach files manually.
+- Reviews page intentionally contains no invented customer reviews. Add verified testimonials only.
+- No unverified licensing, insurance, years of experience or warranty claims are published.
+- Replace SEO title/description, add favicon, privacy policy, domain, business details and analytics as appropriate.
+- Google Fonts requires an internet connection; fallback fonts are included.
+- No server or build process required. All page navigation uses URL hashes (#home, #services, etc.). Configure your SEO strategy before publishing.
 
-For hosting, upload index.html, styles.css, app.js, and assets/ to a static hosting service.
+FILES
+index.html - entry point and shared header/footer
+styles.css - responsive styles
+script.js - page routing, galleries, interactions and estimate email draft
+data.js - editable service category content
+assets/ - logo and illustrative renovation image crops
