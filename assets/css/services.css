@@ -3,21 +3,6 @@
   background: #fff;
 }
 
-.page-services .topbar {
-  width: min(90%, 1420px);
-  height: clamp(72px, 7vw, 108px);
-}
-
-.page-services .topbar .brand {
-  align-self: center;
-  margin: 0;
-}
-
-.page-services .header-logo {
-  width: clamp(114px, 15vw, 225px);
-}
-
-.page-services .top-meta .btn,
 .services-estimate .btn {
   background: var(--services-orange);
   font-size: clamp(.85rem, 1.35vw, 1.3rem);
@@ -25,70 +10,12 @@
   white-space: nowrap;
 }
 
-.page-services .top-meta .btn:hover,
 .services-estimate .btn:hover {
   background: #d95200;
 }
 
-.page-services .nav {
-  background: #222526;
-}
-
-.services-nav-chevron {
-  width: .55em;
-  height: .55em;
-  border: solid currentColor;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg) translateY(-2px);
-}
-
-.services-hero {
-  position: relative;
-  isolation: isolate;
-  background: #231e1a;
-  color: #fff;
-}
-
-.services-hero::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0 0 0 43%;
-  background: linear-gradient(90deg, #29231e, transparent 23%), url("../services/hero.webp?v=crisp") center / cover;
-}
-
-.services-hero-copy {
-  width: min(88%, 1380px);
-  margin-inline: auto;
-  padding: clamp(23px, 1.8vw, 32px) 0;
-}
-
-.services-hero h1 {
-  max-width: 20ch;
-  margin-bottom: 7px;
-  font-size: clamp(2rem, 3.15vw, 3.1rem);
-  line-height: .99;
-}
-
-.services-hero p {
-  max-width: 43ch;
-  margin-bottom: 12px;
-  font-size: clamp(1rem, 1.6vw, 1.55rem);
-  line-height: 1.2;
-}
-
-.services-hero-copy::after {
-  content: "";
-  display: block;
-  width: clamp(70px, 8vw, 125px);
-  height: 8px;
-  border-radius: 10px;
-  background: var(--services-orange);
-}
-
 .services-catalog {
-  width: min(93%, 1420px);
-  margin: clamp(17px, 2vw, 30px) auto;
+  margin-block: clamp(17px, 2vw, 30px);
 }
 
 .services-tiles {
@@ -134,8 +61,7 @@
 }
 
 .services-estimate {
-  width: min(96%, 1460px);
-  margin: 0 auto 24px;
+  margin-bottom: 24px;
   padding: 12px clamp(18px, 3vw, 45px);
   display: flex;
   align-items: center;
@@ -161,26 +87,13 @@
   line-height: 1.2;
 }
 
-@media (min-width: 951px) {
-  .page-services .nav-inner { min-height: 44px; justify-content: center; }
-  .page-services .nav-links { width: min(90%, 1410px); background: transparent; }
-  .page-services .nav-links::before, .page-services .nav a.active::after { content: none; }
-  .page-services .nav a { display: flex; align-items: center; gap: 10px; padding-inline: clamp(10px, 1.9vw, 30px); font-size: clamp(.9rem, 1.25vw, 1.2rem); }
-  .page-services .nav a.active { color: #fff; background: var(--services-orange); border-radius: 6px; }
-}
-
 @media (max-width: 950px) {
-  .page-services [data-site-header] > header { position: relative; }
-  .page-services .nav-links { top: 100%; }
   .service-tile, .service-tile:nth-child(n+5) { grid-column: span 6; }
   .service-tile img { height: auto; aspect-ratio: 2.15; }
   .services-estimate { flex-wrap: wrap; justify-content: flex-start; }
 }
 
 @media (max-width: 650px) {
-  .page-services .top-meta .btn { font-size: .78rem; }
-  .services-hero::before { left: 0; background-image: linear-gradient(90deg, #211d1be8, #211d1b75), url("../services/hero.webp?v=crisp"); }
-  .services-hero-copy { padding-block: 30px; }
   .services-tiles { gap: 12px; }
   .service-tile h2 { padding: .55em; gap: .45em; min-height: 3.55em; }
   .service-tile svg { flex-basis: 1.35em; width: 1.35em; height: 1.35em; }
@@ -189,51 +102,7 @@
   .services-estimate .btn { justify-self: start; }
 }
 
-.services-nav-menu {
-  position: relative;
-  z-index: 3;
-}
-
-.services-nav-menu summary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 44px;
-  padding: 0 clamp(10px, 1.9vw, 30px);
-  border-radius: 6px;
-  background: var(--services-orange);
-  color: #fff;
-  font-size: clamp(.9rem, 1.25vw, 1.2rem);
-  font-weight: 700;
-  cursor: pointer;
-  list-style: none;
-}
-
-.services-nav-menu summary::-webkit-details-marker { display: none; }
-.services-nav-menu[open] .services-nav-chevron { transform: rotate(225deg); }
-
-.services-nav-options {
-  position: absolute;
-  min-width: 17rem;
-  padding: 6px;
-  border-radius: 6px;
-  background: #222526;
-  box-shadow: 0 6px 16px #0004;
-}
-
-.page-services .services-nav-options a {
-  display: block;
-  padding: 8px 12px;
-  font-size: .95rem;
-}
-
 .service-tile:target { outline: 2px solid var(--services-orange); }
-
-@media (max-width: 950px) {
-  .services-nav-menu summary { justify-content: flex-start; }
-  .services-nav-options { position: static; box-shadow: none; }
-}
 
 .renovation-detail-links {
   display: flex;

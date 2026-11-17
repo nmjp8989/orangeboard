@@ -10,10 +10,8 @@
 .topbar .brand { min-width: 0; }
 .topbar .btn { white-space: nowrap; }
 .page-hero .hero-content > p { max-width: 31ch; }
-.page-services .page-hero .hero-content,
 .page-reviews .page-hero .hero-content,
 .page-estimate .page-hero .hero-content { max-width: none; }
-.page-services .page-hero .hero-content > p,
 .page-reviews .page-hero .hero-content > p,
 .page-estimate .page-hero .hero-content > p { max-width: none; }
 .page-about .story-copy p { font-size: clamp(1rem, 1.7vw, 1.6rem); }
@@ -36,13 +34,13 @@
 .page-why-choose-us .hero .feature-icon { background: transparent; font-size: 32px; }
 .page-why-choose-us .hero .feature h3 { margin: 0; }
 .page-why-choose-us .hero .feature p { color: #f2f2f2; }
-.page-services .section, .page-projects .section, .page-estimate .section,
+.page-projects .section, .page-estimate .section,
 .page-reviews .section, .page-about .hero + .section, .page-process .hero + .section { padding-block: 28px 48px; }
-.page-services .service-card { padding: 10px; }
-.page-services .service-card img { border-radius: 8px; height: auto; aspect-ratio: 1.7; }
-.page-services .service-card:last-child { display: grid; place-items: center; text-align: center; }
-.page-services .service-card:last-child h3 { font-size: 1.35rem; }
-.page-services .service-card:last-child .btn { margin-top: 14px; }
+
+
+
+
+
 .page-projects .filter-row { margin: 0 0 24px; }
 .page-projects .project { min-height: 0; }
 .page-projects .project img { height: auto; aspect-ratio: 1.63; }
@@ -58,7 +56,7 @@
 .page-estimate .field input, .page-estimate .field select, .page-estimate .field textarea { padding-top: 27px; }
 .page-estimate .photo { aspect-ratio: 1.36; min-height: 0 !important; }
 .page-estimate .grid-2 > div:first-child { background: white; border-radius: 15px; padding: 10px; box-shadow: var(--shadow); }
-.page-reviews .section > .container, .page-estimate .section > .container, .page-services .section > .container { position: relative; }
+.page-reviews .section > .container, .page-estimate .section > .container { position: relative; }
 
 @media (min-width: 951px) {
   .topbar { height: clamp(94px, 9vw, 145px); }
@@ -90,10 +88,10 @@
   .page-why-choose-us .hero-content { max-width: 850px; }
   .page-why-choose-us .hero h1 { font-size: clamp(2.8rem, 5vw, 5rem); }
   .page-why-choose-us .hero .feature-list { max-width: 640px; }
-  .page-reviews .section, .page-estimate .section, .page-services .section { margin-top: -58px; }
+  .page-reviews .section, .page-estimate .section { margin-top: -58px; }
   .page-estimate .grid-2 { grid-template-columns: 5fr 6fr; gap: 22px; }
   .page-projects .filter { font-size: clamp(14px, 1.6vw, 24px); }
-  .page-services .service-card h3 { font-size: clamp(1.05rem, 1.7vw, 1.7rem); }
+
 }
 .page-process .hero::before { background-position: right center; background-repeat: no-repeat; background-size: auto 100%; }
 .page-process .hero { background: #171b1e; }
