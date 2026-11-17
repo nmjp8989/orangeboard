@@ -14,6 +14,7 @@
     .page-reviews .reviews-hero h1 { max-width: 15ch; line-height: 1.02; }
     .page-reviews .reviews-hero .hero-content > p { max-width: 36ch; font-size: clamp(1rem, 1.95vw, 1.4rem); }
     .reviews-hero .btn, .reviews-cta .btn { font-size: clamp(.9rem, 1.6vw, 1.1rem); }
+    .page-reviews main > .section { margin-top: 0; }
     .rating-summary {
       display: grid;
       grid-template-columns: 1fr 1.4fr .8fr;
@@ -26,7 +27,7 @@
     }
     .rating-summary > * { padding-inline: 14px; }
     .rating-summary > * + * { border-left: 1px solid #ded9d5; }
-    .rating-summary .stars { font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1; margin: 0; }
+    .page-reviews .rating-summary .stars { font-size: clamp(1.6rem, 4vw, 3rem); line-height: 1; margin: 0; }
     .rating-score strong { display: block; font-size: clamp(1.4rem, 3vw, 2.3rem); line-height: 1.12; }
     .rating-score span, .review-source { color: var(--muted); }
     .google-name { display: block; font-size: clamp(1.25rem, 2.6vw, 2rem); font-weight: 800; line-height: 1.1; }
@@ -35,6 +36,7 @@
     .google-name span:nth-child(3) { color: #946400; }
     .google-name span:nth-child(5) { color: #16803d; }
     .page-reviews .quote-card { padding: clamp(16px, 2vw, 28px); }
+    .page-reviews .quote-card .stars { text-align: left; font-size: 1.55rem; line-height: 1.15; }
     .page-reviews .quote-card blockquote { font-size: clamp(1rem, 1.45vw, 1.15rem); line-height: 1.45; }
     .review-initials { display: grid; place-items: center; flex: 0 0 48px; height: 48px; border-radius: 50%; background: #eeecea; font-weight: 800; }
     .reviewer > div { border-left: 1px solid var(--line); padding-left: 12px; }
@@ -52,7 +54,7 @@
     .reviews-cta .btn { flex: none; }
     @media (max-width: 760px) {
       .page-reviews .reviews-hero .reference-hero-image { width: 100%; }
-      .hero.reviews-hero::after { background: linear-gradient(90deg, #141719f2, #141719b5 70%, #14171967); }
+      .page-reviews .hero.reviews-hero::after { background: linear-gradient(90deg, #141719f2, #141719b5 70%, #14171967); }
       .page-reviews .reviews-hero .hero-content { padding-block: 42px; }
       .page-reviews .review-grid, .reviews-projects .project-grid { grid-template-columns: 1fr; }
       .rating-summary { grid-template-columns: 1fr; gap: 12px; }
