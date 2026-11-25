@@ -1,31 +1,43 @@
-CRAFTWELL RENOVATIONS — RESPONSIVE WEBSITE TEMPLATE
+CRAFTWELL RENOVATIONS — ONE-PAGE WEBSITE
 
-Contents
-- index.html          Home
-- about.html          About Craftwell
-- services.html       Renovation and construction services
-- projects.html       Filterable project gallery
-- process.html        Five-step process
-- why-choose-us.html  Reasons to choose Craftwell
-- reviews.html        Customer reviews
-- contact.html        Contact details
-- estimate.html       Estimate request form
-- assets/css/styles.css
-- assets/js/site.js
+STRUCTURE
+- index.html: the complete website, including the consultation form, renovation
+  services, before-and-after comparisons, planning support, process and reviews.
+- assets/css/styles.css: responsive desktop and mobile presentation.
+- assets/js/site.js: homepage interactions and consultation email preparation.
+- 404.html: an accessible fallback for unavailable addresses. Recognized former
+  page URLs redirect to the corresponding section of the homepage. Unknown URLs
+  display a Home link instead of redirecting automatically.
+- _redirects: explicit redirects for the former pages on Cloudflare Pages.
+- .nojekyll: serves the static files directly on GitHub Pages.
 
-UPLOAD
-1. Extract the ZIP on your computer.
-2. Upload the contents of this folder to your hosting provider's public web folder
-   (often named public_html, www, or httpdocs).
-3. Open index.html or your domain to view the home page.
+The separate Services, Projects, Our Process, About, Contact, Why Choose Us,
+Reviews and Request Estimate pages have been removed. Their content is available
+within the single homepage where shown in the supplied design reference.
 
-CUSTOMIZE BEFORE LAUNCH
-- Replace the sample phone number, email address, testimonials, and business hours.
-- The included renovation photos and sample portraits are illustrative images
-  from the supplied design references and previous Craftwell template.
-- The estimate form is a front-end demo. Connect it to your email, CRM, or form
-  service before launch; it currently confirms locally in the visitor's browser.
-- Update the Toronto service area and any licensing/insurance claims to match
-  your business.
+CONTACT DETAILS
+Phone: 416 839 2265
+Email: vern@craftwell.com
+Website: www.craftwell.com
+Service area: Toronto and the Greater Toronto Area
 
-This is a static HTML/CSS/JavaScript template. It needs no build step or framework.
+CONSULTATION FORM
+The form prepares a mailto email draft addressed to vern@craftwell.com with the
+visitor's project details. The visitor reviews and sends the message using their
+email application. This static website does not send or store form submissions
+on a server, and opening the email draft is not a confirmation of delivery.
+
+IMAGERY
+Original repository photos are reused at their full available resolution.
+Generated before-and-after comparison photos are illustrative renovation
+concepts; they are not verified documentation of completed Craftwell projects.
+The original raster assets remain in the repository.
+
+HOSTING
+This is a static HTML, CSS and JavaScript website. No framework, dependency
+installation or build step is required. Publish the repository root through the
+existing hosting configuration. Relative assets and homepage links support both
+the GitHub Pages /orangeboard/ project path and a custom domain at /.
+
+The 404 fallback recognizes former section URLs, their index.html forms and
+legacy .html aliases. Cloudflare Pages uses the explicit rules in _redirects.
