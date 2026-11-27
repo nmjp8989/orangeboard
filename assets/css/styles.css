@@ -194,3 +194,34 @@ footer{padding-top:14px}
 /* Shared navigation on primary, service and city pages. */
 .site-header .dropdown { max-height: calc(100dvh - 80px); overflow-y: auto; }
 .site-header .dropdown .nav-secondary { border-top: 1px solid #686868; margin-top: 5px; }
+
+.site-header .drop-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 32px;
+  padding: 0;
+  font-size: 0;
+  color: inherit;
+  border-radius: 4px;
+}
+.site-header .drop-toggle::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-2px) rotate(45deg);
+}
+.site-header .nav-drop.open .drop-toggle::before {
+  transform: translateY(2px) rotate(225deg);
+}
+@media (hover: hover) {
+  .site-header .drop-toggle:hover { color: var(--yellow); }
+}
+@media (min-width: 961px) {
+  .site-header .nav-drop:is(:hover, :focus-within) .drop-toggle::before { transform: translateY(2px) rotate(225deg); }
+}
+@media (max-width: 960px) {
+  .site-header .drop-toggle { width: 44px; height: 44px; }
+}
