@@ -1,43 +1,7 @@
-CRAFTWELL RENOVATIONS — ONE-PAGE WEBSITE
+CRAFTWELL — MULTI-PAGE STATIC WEBSITE
 
-STRUCTURE
-- index.html: the complete website, including the consultation form, renovation
-  services, before-and-after comparisons, planning support, process and reviews.
-- assets/css/styles.css: responsive desktop and mobile presentation.
-- assets/js/site.js: homepage interactions and consultation email preparation.
-- 404.html: an accessible fallback for unavailable addresses. Recognized former
-  page URLs redirect to the corresponding section of the homepage. Unknown URLs
-  display a Home link instead of redirecting automatically.
-- _redirects: explicit redirects for the former pages on Cloudflare Pages.
-- .nojekyll: serves the static files directly on GitHub Pages.
+31 indexable pages: 11 main pages, 10 service pages, 10 city pages. Main navigation uses directory routes; service and city pages use exact SEO filenames in the mockup. Shared CSS/JS and relative asset paths work on GitHub Pages and custom-domain root. Canonical URLs and sitemap use the current GitHub Pages preview URL; update them to the confirmed production domain before production indexing. The GitHub Pages project cannot publish robots.txt at the domain root; submit sitemap.xml in Search Console. No build needed.
 
-The separate Services, Projects, Our Process, About, Contact, Why Choose Us,
-Reviews and Request Estimate pages have been removed. Their content is available
-within the single homepage where shown in the supplied design reference.
+The photos reused from the existing repository are illustrative concepts, not verified Craftwell project photos. Four existing before/after pairs are used; other concepts are not labeled as before/after. Some exact photography from the new mockups is not available in the repository. The GTA map and skyline are schematic SVG illustrations. Testimonials supplied in the mockup are explicitly identified as unverified draft examples. Confirm testimonials, ratings, experience and legal/privacy wording with the company before promoting the website. The consultation form uses the existing mailto flow and does not upload files, store data or claim to send messages; visitors attach documents in their email app. The contact address follows the detailed contact mockup (15th Floor, Unit 3); confirm it against the conflicting older Unit 112 reference. No analytics or tracking added.
 
-CONTACT DETAILS
-Phone: 416 839 2265
-Email: vern@craftwell.com
-Website: www.craftwell.com
-Service area: Toronto and the Greater Toronto Area
-
-CONSULTATION FORM
-The form prepares a mailto email draft addressed to vern@craftwell.com with the
-visitor's project details. The visitor reviews and sends the message using their
-email application. This static website does not send or store form submissions
-on a server, and opening the email draft is not a confirmation of delivery.
-
-IMAGERY
-Original repository photos are reused at their full available resolution.
-Generated before-and-after comparison photos are illustrative renovation
-concepts; they are not verified documentation of completed Craftwell projects.
-The original raster assets remain in the repository.
-
-HOSTING
-This is a static HTML, CSS and JavaScript website. No framework, dependency
-installation or build step is required. Publish the repository root through the
-existing hosting configuration. Relative assets and homepage links support both
-the GitHub Pages /orangeboard/ project path and a custom domain at /.
-
-The 404 fallback recognizes former section URLs, their index.html forms and
-legacy .html aliases. Cloudflare Pages uses the explicit rules in _redirects.
+Old routes have explicit Cloudflare redirects and a GitHub Pages 404 fallback.
