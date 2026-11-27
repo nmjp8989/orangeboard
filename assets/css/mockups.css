@@ -531,3 +531,9 @@ body { color: #101213; }
   .page-services .header-inner .before-after-nav { display: none; }
   .page-testimonials .review-cta-action { flex-basis: 100%; }
 }
+
+/* Place live captions over the matching badges in each reference photograph. */
+.reference-pair { position: relative; container-type: inline-size; }
+.comparison-labels { position: absolute; inset: 0; pointer-events: none; }
+.comparison-labels b { position: absolute; display: grid; place-items: center; border-radius: 3px; background: #191b1c; color: white; font: 800 clamp(.6rem, 3.6cqw, 1.25rem)/1 Arial,sans-serif; text-transform: uppercase; }
+.comparison-labels b:last-child { background: #ffc321; color: #111; }
