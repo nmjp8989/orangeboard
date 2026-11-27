@@ -44,7 +44,22 @@ body { color: #101213; }
 
 .page-home .strip { background: #f7f5f1; }
 .page-home .service-card::after { background: linear-gradient(0deg, #141616ef 1%, #14161642 28%, transparent 68%); }
-.page-home .service-card img { object-position: top; }
+/* Show the entire crop and let the dark caption area fill the remaining space. */
+.page-home .service-card img {
+  height: auto;
+  object-position: top;
+  mask-image: linear-gradient(#000 76%, transparent);
+}
+.photo-dialog {
+  width: fit-content;
+  max-width: min(93vw, 1100px);
+}
+.photo-dialog img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
 .page-home .transformation-title .eyebrow { color: var(--yellow); }
 .page-home .dark .image-note, .page-projects .image-note, .page-about-us .image-note, .page-testimonials .image-note {
   margin-block: 4px 0;
