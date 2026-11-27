@@ -9,24 +9,11 @@
 
 body { color: #101213; }
 [hidden] { display: none !important; }
-
-.hero { background: #101516; }
-.hero .hero-overlay { display: none; }
-.hero .hero-photo {
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-position: center;
-}
-.hero .hero-content { padding-inline: 0; }
-.hero-content h1 { text-shadow: 0 2px 6px #0003; }
-.hero .eyebrow::after { min-width: 35px; }
-.hero .btn, .cta .btn {
+ .cta .btn{
   background: linear-gradient(#ffdc7f, #ffc01e);
   border-color: #efb336;
 }
-.hero .outline { background: #1316195c; border-color: white; color: white; }
-.hero .btn:hover, .cta .btn:hover { filter: brightness(1.08); }
+ .cta .btn:hover{ filter: brightness(1.08); }
 
 
 
@@ -137,22 +124,6 @@ body { color: #101213; }
 .page-contact .form-status[hidden], .page-free-consultation .form-status[hidden] { display: none; }
 
 @media (min-width: 801px) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .hero { height: calc(var(--hero-height, 300) * var(--u)); min-height: 0 !important; }
   .page-home { --hero-height: 305; }
   .page-our-process { --hero-height: 252; }
   .page-projects { --hero-height: 285; }
@@ -164,46 +135,6 @@ body { color: #101213; }
   .page-free-consultation { --hero-height: 350; }
   .page-privacy-policy { --hero-height: 288; }
   .page-testimonials { --hero-height: 245; }
-  .page-projects .hero .hero-photo { inset: 0; width: 100%; }
-  .hero .hero-content {
-    width: 92%;
-    padding-block: 0;
-  }
-  .hero .eyebrow { font-size: 1.92vw; margin-bottom: .6vw; }
-  .hero .eyebrow::after { width: 5.7vw; color: var(--yellow); }
-  .hero .hero-content h1 { font-size: var(--hero-title,5.5vw); }
-  .hero .hero-copy { font-size: var(--hero-copy,1.97vw); max-width: var(--hero-copy-width,38vw); margin-top: .9vw; }
-  .hero-buttons { margin-top: 1.4vw; }
-  .hero .btn { font-size: 1.72vw; padding: .63em 1.13em; }
-  .page-home .hero .hero-content { width: 89%; }
-  .page-home .hero .hero-content h1 { --hero-title: 4.5vw; }
-  .page-home .hero .hero-copy { --hero-copy-width: 36vw; --hero-copy: 1.83vw; }
-  .page-home .hero .eyebrow { font-size: 1.4vw; }
-  .page-home .hero .btn { font-size: 1.56vw; }
-  .page-our-process .hero .hero-content h1 { --hero-title: 4.4vw; }
-  .page-our-process .hero .hero-copy { --hero-copy-width: 38vw; }
-  .page-our-process .hero .eyebrow, .page-projects .hero .eyebrow, .page-services .hero .eyebrow, .page-contact .hero .eyebrow {
-    color: white;
-    letter-spacing: .18em;
-  }
-  .page-our-process .hero .eyebrow, .page-projects .hero .eyebrow, .page-services .hero .eyebrow { font-size: 1.46vw; }
-  .page-projects .hero .hero-content { width: 94%; }
-  .page-projects .hero .hero-content h1 { --hero-title: 4.45vw; }
-  .page-projects .hero .hero-copy { --hero-copy-width: 31vw; }
-  .page-services .hero .hero-content h1 { --hero-title: 3.9vw; }
-  .page-services .hero .hero-copy { --hero-copy: 1.63vw; --hero-copy-width: 34vw; }
-  .page-services .hero .btn { font-size: 1.47vw; }
-  .page-about-us .hero .hero-content { width: 90%; }
-  .page-about-us .hero .hero-content h1 { --hero-title: 5.7vw; }
-  .page-about-us .hero .hero-copy { --hero-copy: 1.75vw; --hero-copy-width: 37vw; }
-  .page-about-us .hero-tagline { font-size: 2vw; }
-  .page-contact .hero .hero-copy { --hero-copy-width: 35vw; --hero-copy: 1.83vw; }
-  .page-faq .hero .hero-copy { --hero-copy-width: 35vw; }
-  .page-service-areas .hero .hero-copy { --hero-copy-width: 42vw; --hero-copy: 2.05vw; }
-  .page-service-areas .hero .hero-content h1 { max-width: 67vw; }
-  .page-testimonials .hero .hero-content h1 { --hero-title: 4.85vw; }
-  .page-testimonials .hero .hero-copy { --hero-copy-width: 39vw; --hero-copy: 1.94vw; }
-  .page-privacy-policy .hero .hero-copy { --hero-copy-width: 35vw; --hero-copy: 2.25vw; }
 
   .strip { padding-block: 1.09vw; }
   .strip-grid .ico { width: 4.55vw; height: 4.55vw; }
@@ -413,12 +344,6 @@ body { color: #101213; }
 }
 
 @media (max-width: 800px) {
-  .hero .hero-photo { object-position: 62%; }
-  .hero .hero-overlay { display: block; background: linear-gradient(90deg,#111719d9 0%,#11171992 52%,transparent 100%); }
-  .hero .hero-content { padding-block: 23px; }
-  .hero .hero-content h1 { max-width: 92%; }
-  .hero .hero-copy { max-width: min(94%, 28rem); }
-  .page-projects .hero .hero-photo { inset: 0; width: 100%; }
   .page-testimonials .review-list article > div { padding-left: 40px; }
   .page-services .services-completion > .checks { padding: 0 15px 15px; }
   .services-area-band > img { display: none; }
@@ -432,19 +357,6 @@ body { color: #101213; }
 .page-testimonials .review-cta-action .btn { margin-top: .45em; }
 
 @media (min-width: 801px) {
-
-
-
-
-
-
-
-
-
-
-
-  .page-services .hero .hero-content { padding-bottom: .5vw; }
-  .page-services .hero .hero-copy { line-height: 1.14; }
   .page-services .service-copy h2 { font-size: 2.5vw; letter-spacing: -.055em; white-space: nowrap; }
   .page-services .service-copy p { margin-top: .3vw; }
   .page-services .service-row .learn { margin-top: .47vw; }
@@ -539,10 +451,6 @@ body { color: #101213; }
 
 /* Desktop artwork follows the supplied design canvas. Controls retain their HTML semantics. */
 @media screen and (min-width: 961px) and (forced-colors: none) {
-body.page-home main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:29.78516vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-home main > section:nth-of-type(1) > * { opacity:0; } body.page-home main > section:nth-of-type(1)::after, body.page-home main > section:nth-of-type(1)::before { display:none; }
-body.page-home main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-home main > section:nth-of-type(1) > div { opacity:1; } body.page-home main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-home main > section:nth-of-type(1) a[href="free-consultation/"] { display:block; position:absolute; z-index:2; left:5.6641%; top:77.7049%; width:23.3398%; height:13.1148%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-home main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:6.54297vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 46.4231355% / 100% auto no-repeat; }
 body.page-home main > section:nth-of-type(2) > * { opacity:0; } body.page-home main > section:nth-of-type(2)::after, body.page-home main > section:nth-of-type(2)::before { display:none; }
 body.page-home main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:20.01953vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 71.6763006% / 100% auto no-repeat; }
@@ -551,31 +459,18 @@ body.page-home main > section:nth-of-type(6) { position:relative; isolation:isol
 body.page-home main > section:nth-of-type(6) > * { opacity:0; } body.page-home main > section:nth-of-type(6)::after, body.page-home main > section:nth-of-type(6)::before { display:none; }
 body.page-home main > section:nth-of-type(6) :is(div,nav) { position:static; transform:none; } body.page-home main > section:nth-of-type(6) > div { opacity:1; } body.page-home main > section:nth-of-type(6) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
 body.page-home main > section:nth-of-type(6) a[href="free-consultation/"] { display:block; position:absolute; z-index:2; left:61.3281%; top:58.5034%; width:29.4922%; height:30.6122%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-services main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:22.75391vw; min-height:0!important; background: url("../mockups/services-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-services main > section:nth-of-type(1) > * { opacity:0; } body.page-services main > section:nth-of-type(1)::after, body.page-services main > section:nth-of-type(1)::before { display:none; }
-body.page-services main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-services main > section:nth-of-type(1) > div { opacity:1; } body.page-services main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-services main > section:nth-of-type(1) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:4.1992%; top:78.1116%; width:22.6562%; height:15.8798%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-services main > section:nth-of-type(1) a[href="../projects/"] { display:block; position:absolute; z-index:2; left:28.8086%; top:78.1116%; width:15.9180%; height:15.8798%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-services main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:12.30469vw; min-height:0!important; background: url("../mockups/services-layout.webp") center 67.7325581% / 100% auto no-repeat; }
 body.page-services main > section:nth-of-type(3) > * { opacity:0; } body.page-services main > section:nth-of-type(3)::after, body.page-services main > section:nth-of-type(3)::before { display:none; }
 body.page-services main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:10.83984vw; min-height:0!important; background: url("../mockups/services-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-services main > section:nth-of-type(5) > * { opacity:0; } body.page-services main > section:nth-of-type(5)::after, body.page-services main > section:nth-of-type(5)::before { display:none; }
-body.page-our-process main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:24.51172vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-our-process main > section:nth-of-type(1) > * { opacity:0; } body.page-our-process main > section:nth-of-type(1)::after, body.page-our-process main > section:nth-of-type(1)::before { display:none; }
 body.page-our-process main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:60.05859vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 38.2039574% / 100% auto no-repeat; }
 body.page-our-process main > section:nth-of-type(2) > * { opacity:0; } body.page-our-process main > section:nth-of-type(2)::after, body.page-our-process main > section:nth-of-type(2)::before { display:none; }
 body.page-our-process main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:22.94922vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 83.5101254% / 100% auto no-repeat; }
 body.page-our-process main > section:nth-of-type(3) > * { opacity:0; } body.page-our-process main > section:nth-of-type(3)::after, body.page-our-process main > section:nth-of-type(3)::before { display:none; }
 body.page-our-process main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:16.69922vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-our-process main > section:nth-of-type(4) > * { opacity:0; } body.page-our-process main > section:nth-of-type(4)::after, body.page-our-process main > section:nth-of-type(4)::before { display:none; }
-body.page-projects main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:27.83203vw; min-height:0!important; background: url("../mockups/projects-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-projects main > section:nth-of-type(1) > * { opacity:0; } body.page-projects main > section:nth-of-type(1)::after, body.page-projects main > section:nth-of-type(1)::before { display:none; }
-body.page-projects main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-projects main > section:nth-of-type(1) > div { opacity:1; } body.page-projects main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-projects main > section:nth-of-type(1) .hero-compare-action { display:block; position:absolute; z-index:2; left:62.9883%; top:43.5088%; width:4.3945%; height:15.4386%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-projects main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:5.66406vw; min-height:0!important; background: url("../mockups/projects-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-projects main > section:nth-of-type(3) > * { opacity:0; } body.page-projects main > section:nth-of-type(3)::after, body.page-projects main > section:nth-of-type(3)::before { display:none; }
-body.page-about-us main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:35.15625vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(1) > * { opacity:0; } body.page-about-us main > section:nth-of-type(1)::after, body.page-about-us main > section:nth-of-type(1)::before { display:none; }
 body.page-about-us main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:8.20312vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 33.1186753% / 100% auto no-repeat; }
 body.page-about-us main > section:nth-of-type(2) > * { opacity:0; } body.page-about-us main > section:nth-of-type(2)::after, body.page-about-us main > section:nth-of-type(2)::before { display:none; }
 body.page-about-us main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:27.05078vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 49.6644295% / 100% auto no-repeat; }
@@ -588,42 +483,24 @@ body.page-about-us main > section:nth-of-type(7) { position:relative; isolation:
 body.page-about-us main > section:nth-of-type(7) > * { opacity:0; } body.page-about-us main > section:nth-of-type(7)::after, body.page-about-us main > section:nth-of-type(7)::before { display:none; }
 body.page-about-us main > section:nth-of-type(7) :is(div,nav) { position:static; transform:none; } body.page-about-us main > section:nth-of-type(7) > div { opacity:1; } body.page-about-us main > section:nth-of-type(7) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
 body.page-about-us main > section:nth-of-type(7) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:72.2656%; top:22.2222%; width:25.3906%; height:54.3210%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-contact main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:35.93750vw; min-height:0!important; background: url("../mockups/contact-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-contact main > section:nth-of-type(1) > * { opacity:0; } body.page-contact main > section:nth-of-type(1)::after, body.page-contact main > section:nth-of-type(1)::before { display:none; }
-body.page-contact main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-contact main > section:nth-of-type(1) > div { opacity:1; } body.page-contact main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-contact main > section:nth-of-type(1) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:3.9062%; top:83.1522%; width:29.1016%; height:12.5000%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-contact main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:25.00000vw; min-height:0!important; background: url("../mockups/contact-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-contact main > section:nth-of-type(3) > * { opacity:0; } body.page-contact main > section:nth-of-type(3)::after, body.page-contact main > section:nth-of-type(3)::before { display:none; }
-body.page-faq main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:36.03516vw; min-height:0!important; background: url("../mockups/faq-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-faq main > section:nth-of-type(1) > * { opacity:0; } body.page-faq main > section:nth-of-type(1)::after, body.page-faq main > section:nth-of-type(1)::before { display:none; }
 body.page-faq main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:9.27734vw; min-height:0!important; background: url("../mockups/faq-layout.webp") center 72.7810651% / 100% auto no-repeat; }
 body.page-faq main > section:nth-of-type(2) > * { opacity:0; } body.page-faq main > section:nth-of-type(2)::after, body.page-faq main > section:nth-of-type(2)::before { display:none; }
 body.page-faq main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:13.47656vw; min-height:0!important; background: url("../mockups/faq-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-faq main > section:nth-of-type(4) > * { opacity:0; } body.page-faq main > section:nth-of-type(4)::after, body.page-faq main > section:nth-of-type(4)::before { display:none; }
 body.page-faq main > section:nth-of-type(4) :is(div,nav) { position:static; transform:none; } body.page-faq main > section:nth-of-type(4) > div { opacity:1; } body.page-faq main > section:nth-of-type(4) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
 body.page-faq main > section:nth-of-type(4) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:62.0117%; top:23.1884%; width:34.8633%; height:47.1014%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-service-areas main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:34.76562vw; min-height:0!important; background: url("../mockups/service-areas-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-service-areas main > section:nth-of-type(1) > * { opacity:0; } body.page-service-areas main > section:nth-of-type(1)::after, body.page-service-areas main > section:nth-of-type(1)::before { display:none; }
-body.page-service-areas main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-service-areas main > section:nth-of-type(1) > div { opacity:1; } body.page-service-areas main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-service-areas main > section:nth-of-type(1) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:3.9062%; top:79.2135%; width:30.0781%; height:15.1685%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-service-areas main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:12.89062vw; min-height:0!important; background: url("../mockups/service-areas-layout.webp") center 71.2000000% / 100% auto no-repeat; }
 body.page-service-areas main > section:nth-of-type(4) > * { opacity:0; } body.page-service-areas main > section:nth-of-type(4)::after, body.page-service-areas main > section:nth-of-type(4)::before { display:none; }
 body.page-service-areas main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:14.06250vw; min-height:0!important; background: url("../mockups/service-areas-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-service-areas main > section:nth-of-type(5) > * { opacity:0; } body.page-service-areas main > section:nth-of-type(5)::after, body.page-service-areas main > section:nth-of-type(5)::before { display:none; }
 body.page-service-areas main > section:nth-of-type(5) :is(div,nav) { position:static; transform:none; } body.page-service-areas main > section:nth-of-type(5) > div { opacity:1; } body.page-service-areas main > section:nth-of-type(5) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
 body.page-service-areas main > section:nth-of-type(5) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:63.0859%; top:30.5556%; width:32.5195%; height:35.4167%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-free-consultation main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:34.17969vw; min-height:0!important; background: url("../mockups/free-consultation-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-free-consultation main > section:nth-of-type(1) > * { opacity:0; } body.page-free-consultation main > section:nth-of-type(1)::after, body.page-free-consultation main > section:nth-of-type(1)::before { display:none; }
-body.page-free-consultation main > section:nth-of-type(1) :is(div,nav) { position:static; transform:none; } body.page-free-consultation main > section:nth-of-type(1) > div { opacity:1; } body.page-free-consultation main > section:nth-of-type(1) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-free-consultation main > section:nth-of-type(1) a[href="#consultation"] { display:block; position:absolute; z-index:2; left:3.9062%; top:81.7143%; width:31.9336%; height:14.0000%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
 body.page-free-consultation main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:9.08203vw; min-height:0!important; background: url("../mockups/free-consultation-layout.webp") center 57.5657895% / 100% auto no-repeat; }
 body.page-free-consultation main > section:nth-of-type(2) > * { opacity:0; } body.page-free-consultation main > section:nth-of-type(2)::after, body.page-free-consultation main > section:nth-of-type(2)::before { display:none; }
 body.page-free-consultation main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:25.19531vw; min-height:0!important; background: url("../mockups/free-consultation-layout.webp") center 100.0000000% / 100% auto no-repeat; }
 body.page-free-consultation main > section:nth-of-type(4) > * { opacity:0; } body.page-free-consultation main > section:nth-of-type(4)::after, body.page-free-consultation main > section:nth-of-type(4)::before { display:none; }
-body.page-privacy-policy main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:28.12500vw; min-height:0!important; background: url("../mockups/privacy-policy-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-privacy-policy main > section:nth-of-type(1) > * { opacity:0; } body.page-privacy-policy main > section:nth-of-type(1)::after, body.page-privacy-policy main > section:nth-of-type(1)::before { display:none; }
-body.page-testimonials main > section:nth-of-type(1) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:23.92578vw; min-height:0!important; background: url("../mockups/testimonials-layout.webp") center 0.0000000% / 100% auto no-repeat; }
-body.page-testimonials main > section:nth-of-type(1) > * { opacity:0; } body.page-testimonials main > section:nth-of-type(1)::after, body.page-testimonials main > section:nth-of-type(1)::before { display:none; }
 body.page-testimonials main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:7.32422vw; min-height:0!important; background: url("../mockups/testimonials-layout.webp") center 67.4931129% / 100% auto no-repeat; }
 body.page-testimonials main > section:nth-of-type(2) > * { opacity:0; } body.page-testimonials main > section:nth-of-type(2)::after, body.page-testimonials main > section:nth-of-type(2)::before { display:none; }
 body.page-testimonials main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:11.52344vw; min-height:0!important; background: url("../mockups/testimonials-layout.webp") center 100.0000000% / 100% auto no-repeat; }
