@@ -21,14 +21,14 @@ body { color: #101213; }
 .hero .hero-content { padding-inline: 0; }
 .hero-content h1 { text-shadow: 0 2px 6px #0003; }
 .hero .eyebrow::after { min-width: 35px; }
-.hero .btn, .header-actions .btn, .cta .btn {
+.hero .btn, .cta .btn {
   background: linear-gradient(#ffdc7f, #ffc01e);
   border-color: #efb336;
 }
 .hero .outline { background: #1316195c; border-color: white; color: white; }
-.hero .btn:hover, .header-actions .btn:hover, .cta .btn:hover { filter: brightness(1.08); }
-.nav-drop .dropdown { max-height: calc(100dvh - 85px); overflow-y: auto; }
-.dropdown .nav-secondary { border-top: 1px solid #686868; border-radius: 0; margin-top: 5px; }
+.hero .btn:hover, .cta .btn:hover { filter: brightness(1.08); }
+
+
 
 .comparison.reference-pair {
   aspect-ratio: auto;
@@ -137,22 +137,21 @@ body { color: #101213; }
 .page-contact .form-status[hidden], .page-free-consultation .form-status[hidden] { display: none; }
 
 @media (min-width: 801px) {
-  .site-header { border-bottom: 0; }
-  .header-inner { width: 94%; min-height: calc(72 * var(--u)); gap: 1.4vw; padding: .35vw 0; }
-  .page-home .header-inner { min-height: calc(57 * var(--u)); }
-  .page-services .header-inner { min-height: calc(59 * var(--u)); }
-  .header-inner .brand b { font-size: 2.68vw; letter-spacing: .11em; }
-  .header-inner .brand svg { width: 7.3vw; height: 2.17vw; }
-  .header-inner .brand span { font-size: 1.18vw; margin-top: .20vw; }
-  .page-home .header-inner .brand svg { height: 1.7vw; }
-  .page-home .header-inner .brand b { font-size: 2.4vw; }
-  .page-home .header-inner .brand span { font-size: 1.04vw; }
-  .header-inner nav { gap: 1.75vw; margin-left: auto; font-size: 1.38vw; font-weight: 600; }
-  .header-actions { gap: .95vw; }
-  .header-actions .phone { border-radius: 10px; font-size: 1.28vw; padding: .63vw .65vw; }
-  .header-actions .btn { font-size: 1.13vw; padding: .74vw .81vw; white-space: nowrap; gap: .38vw; }
-  .page-home .header-actions .phone { border-color: transparent; }
-  .drop-toggle { padding: 3px 2px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .hero { height: calc(var(--hero-height, 300) * var(--u)); min-height: 0 !important; }
   .page-home { --hero-height: 305; }
   .page-our-process { --hero-height: 252; }
@@ -433,17 +432,17 @@ body { color: #101213; }
 .page-testimonials .review-cta-action .btn { margin-top: .45em; }
 
 @media (min-width: 801px) {
-  .header-inner .brand { line-height: 1; }
-  .header-inner .brand span { line-height: 1; }
-  .page-home .header-inner { width: 92%; padding: 0; }
-  .page-home .header-inner .brand b { font-size: 2.25vw; }
-  .page-home .header-inner .brand svg { height: 1.67vw; }
-  .page-services .header-inner { padding-block: 0; }
-  .page-services .header-inner .brand b { font-size: 2.25vw; }
-  .page-services .header-inner .brand svg { height: 1.75vw; }
-  .page-services .header-inner .brand span { font-size: 1.03vw; }
-  .page-services .header-inner nav { gap: 1.28vw; font-size: 1.21vw; }
-  .page-services .header-actions .btn { font-size: 1.04vw; }
+
+
+
+
+
+
+
+
+
+
+
   .page-services .hero .hero-content { padding-bottom: .5vw; }
   .page-services .hero .hero-copy { line-height: 1.14; }
   .page-services .service-copy h2 { font-size: 2.5vw; letter-spacing: -.055em; white-space: nowrap; }
@@ -528,7 +527,7 @@ body { color: #101213; }
 }
 
 @media (max-width: 800px) {
-  .page-services .header-inner .before-after-nav { display: none; }
+
   .page-testimonials .review-cta-action { flex-basis: 100%; }
 }
 
