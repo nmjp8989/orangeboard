@@ -449,62 +449,30 @@ body { color: #101213; }
 .comparison-labels b { position: absolute; display: grid; place-items: center; border-radius: 3px; background: #191b1c; color: white; font: 800 clamp(.6rem, 3.6cqw, 1.25rem)/1 Arial,sans-serif; text-transform: uppercase; }
 .comparison-labels b:last-child { background: #ffc321; color: #111; }
 
-/* Desktop artwork follows the supplied design canvas. Controls retain their HTML semantics. */
-@media screen and (min-width: 961px) and (forced-colors: none) {
-body.page-home main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:6.54297vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 46.4231355% / 100% auto no-repeat; }
-body.page-home main > section:nth-of-type(2) > * { opacity:0; } body.page-home main > section:nth-of-type(2)::after, body.page-home main > section:nth-of-type(2)::before { display:none; }
-body.page-home main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:20.01953vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 71.6763006% / 100% auto no-repeat; }
-body.page-home main > section:nth-of-type(5) > * { opacity:0; } body.page-home main > section:nth-of-type(5)::after, body.page-home main > section:nth-of-type(5)::before { display:none; }
-body.page-home main > section:nth-of-type(6) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:14.35547vw; min-height:0!important; background: url("../mockups/home-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-home main > section:nth-of-type(6) > * { opacity:0; } body.page-home main > section:nth-of-type(6)::after, body.page-home main > section:nth-of-type(6)::before { display:none; }
-body.page-home main > section:nth-of-type(6) :is(div,nav) { position:static; transform:none; } body.page-home main > section:nth-of-type(6) > div { opacity:1; } body.page-home main > section:nth-of-type(6) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-home main > section:nth-of-type(6) a[href="free-consultation/"] { display:block; position:absolute; z-index:2; left:61.3281%; top:58.5034%; width:29.4922%; height:30.6122%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-services main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:12.30469vw; min-height:0!important; background: url("../mockups/services-layout.webp") center 67.7325581% / 100% auto no-repeat; }
-body.page-services main > section:nth-of-type(3) > * { opacity:0; } body.page-services main > section:nth-of-type(3)::after, body.page-services main > section:nth-of-type(3)::before { display:none; }
-body.page-services main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:10.83984vw; min-height:0!important; background: url("../mockups/services-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-services main > section:nth-of-type(5) > * { opacity:0; } body.page-services main > section:nth-of-type(5)::after, body.page-services main > section:nth-of-type(5)::before { display:none; }
-body.page-our-process main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:60.05859vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 38.2039574% / 100% auto no-repeat; }
-body.page-our-process main > section:nth-of-type(2) > * { opacity:0; } body.page-our-process main > section:nth-of-type(2)::after, body.page-our-process main > section:nth-of-type(2)::before { display:none; }
-body.page-our-process main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:22.94922vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 83.5101254% / 100% auto no-repeat; }
-body.page-our-process main > section:nth-of-type(3) > * { opacity:0; } body.page-our-process main > section:nth-of-type(3)::after, body.page-our-process main > section:nth-of-type(3)::before { display:none; }
-body.page-our-process main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:16.69922vw; min-height:0!important; background: url("../mockups/our-process-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-our-process main > section:nth-of-type(4) > * { opacity:0; } body.page-our-process main > section:nth-of-type(4)::after, body.page-our-process main > section:nth-of-type(4)::before { display:none; }
-body.page-projects main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:5.66406vw; min-height:0!important; background: url("../mockups/projects-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-projects main > section:nth-of-type(3) > * { opacity:0; } body.page-projects main > section:nth-of-type(3)::after, body.page-projects main > section:nth-of-type(3)::before { display:none; }
-body.page-about-us main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:8.20312vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 33.1186753% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(2) > * { opacity:0; } body.page-about-us main > section:nth-of-type(2)::after, body.page-about-us main > section:nth-of-type(2)::before { display:none; }
-body.page-about-us main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:27.05078vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 49.6644295% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(3) > * { opacity:0; } body.page-about-us main > section:nth-of-type(3)::after, body.page-about-us main > section:nth-of-type(3)::before { display:none; }
-body.page-about-us main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:25.97656vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 79.6685083% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(4) > * { opacity:0; } body.page-about-us main > section:nth-of-type(4)::after, body.page-about-us main > section:nth-of-type(4)::before { display:none; }
-body.page-about-us main > section:nth-of-type(6) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:10.05859vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 92.4157303% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(6) > * { opacity:0; } body.page-about-us main > section:nth-of-type(6)::after, body.page-about-us main > section:nth-of-type(6)::before { display:none; }
-body.page-about-us main > section:nth-of-type(7) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:7.91016vw; min-height:0!important; background: url("../mockups/about-us-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-about-us main > section:nth-of-type(7) > * { opacity:0; } body.page-about-us main > section:nth-of-type(7)::after, body.page-about-us main > section:nth-of-type(7)::before { display:none; }
-body.page-about-us main > section:nth-of-type(7) :is(div,nav) { position:static; transform:none; } body.page-about-us main > section:nth-of-type(7) > div { opacity:1; } body.page-about-us main > section:nth-of-type(7) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-about-us main > section:nth-of-type(7) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:72.2656%; top:22.2222%; width:25.3906%; height:54.3210%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-contact main > section:nth-of-type(3) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:25.00000vw; min-height:0!important; background: url("../mockups/contact-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-contact main > section:nth-of-type(3) > * { opacity:0; } body.page-contact main > section:nth-of-type(3)::after, body.page-contact main > section:nth-of-type(3)::before { display:none; }
-body.page-faq main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:9.27734vw; min-height:0!important; background: url("../mockups/faq-layout.webp") center 72.7810651% / 100% auto no-repeat; }
-body.page-faq main > section:nth-of-type(2) > * { opacity:0; } body.page-faq main > section:nth-of-type(2)::after, body.page-faq main > section:nth-of-type(2)::before { display:none; }
-body.page-faq main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:13.47656vw; min-height:0!important; background: url("../mockups/faq-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-faq main > section:nth-of-type(4) > * { opacity:0; } body.page-faq main > section:nth-of-type(4)::after, body.page-faq main > section:nth-of-type(4)::before { display:none; }
-body.page-faq main > section:nth-of-type(4) :is(div,nav) { position:static; transform:none; } body.page-faq main > section:nth-of-type(4) > div { opacity:1; } body.page-faq main > section:nth-of-type(4) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-faq main > section:nth-of-type(4) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:62.0117%; top:23.1884%; width:34.8633%; height:47.1014%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-service-areas main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:12.89062vw; min-height:0!important; background: url("../mockups/service-areas-layout.webp") center 71.2000000% / 100% auto no-repeat; }
-body.page-service-areas main > section:nth-of-type(4) > * { opacity:0; } body.page-service-areas main > section:nth-of-type(4)::after, body.page-service-areas main > section:nth-of-type(4)::before { display:none; }
-body.page-service-areas main > section:nth-of-type(5) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:14.06250vw; min-height:0!important; background: url("../mockups/service-areas-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-service-areas main > section:nth-of-type(5) > * { opacity:0; } body.page-service-areas main > section:nth-of-type(5)::after, body.page-service-areas main > section:nth-of-type(5)::before { display:none; }
-body.page-service-areas main > section:nth-of-type(5) :is(div,nav) { position:static; transform:none; } body.page-service-areas main > section:nth-of-type(5) > div { opacity:1; } body.page-service-areas main > section:nth-of-type(5) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-service-areas main > section:nth-of-type(5) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:63.0859%; top:30.5556%; width:32.5195%; height:35.4167%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
-body.page-free-consultation main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:9.08203vw; min-height:0!important; background: url("../mockups/free-consultation-layout.webp") center 57.5657895% / 100% auto no-repeat; }
-body.page-free-consultation main > section:nth-of-type(2) > * { opacity:0; } body.page-free-consultation main > section:nth-of-type(2)::after, body.page-free-consultation main > section:nth-of-type(2)::before { display:none; }
-body.page-free-consultation main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:25.19531vw; min-height:0!important; background: url("../mockups/free-consultation-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-free-consultation main > section:nth-of-type(4) > * { opacity:0; } body.page-free-consultation main > section:nth-of-type(4)::after, body.page-free-consultation main > section:nth-of-type(4)::before { display:none; }
-body.page-testimonials main > section:nth-of-type(2) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:7.32422vw; min-height:0!important; background: url("../mockups/testimonials-layout.webp") center 67.4931129% / 100% auto no-repeat; }
-body.page-testimonials main > section:nth-of-type(2) > * { opacity:0; } body.page-testimonials main > section:nth-of-type(2)::after, body.page-testimonials main > section:nth-of-type(2)::before { display:none; }
-body.page-testimonials main > section:nth-of-type(4) { position:relative; isolation:isolate; display:block; box-sizing:border-box; width:100%; max-width:none; margin:0; padding:0; border:0; height:11.52344vw; min-height:0!important; background: url("../mockups/testimonials-layout.webp") center 100.0000000% / 100% auto no-repeat; }
-body.page-testimonials main > section:nth-of-type(4) > * { opacity:0; } body.page-testimonials main > section:nth-of-type(4)::after, body.page-testimonials main > section:nth-of-type(4)::before { display:none; }
-body.page-testimonials main > section:nth-of-type(4) :is(div,nav) { position:static; transform:none; } body.page-testimonials main > section:nth-of-type(4) > div { opacity:1; } body.page-testimonials main > section:nth-of-type(4) > div :is(p,h1,h2,svg,small,span) { opacity:0; }
-body.page-testimonials main > section:nth-of-type(4) a[href="../free-consultation/"] { display:block; position:absolute; z-index:2; left:56.2500%; top:51.6949%; width:39.6484%; height:37.2881%; transform:none; background:transparent; border:0; color:transparent; opacity:1; padding:0; margin:0; box-shadow:none; }
+
+
+/* Every comparison uses the same live caption bar. */
+.reference-pair { display:flex; flex-direction:column; padding:0; overflow:hidden; }
+.comparison.reference-pair img,
+.page-projects .project-card .comparison.reference-pair img {
+  position:static; display:block; width:100%; height:auto; object-fit:contain;
+}
+.comparison.reference-pair .comparison-labels {
+  position:static; display:grid; grid-template-columns:1fr 1fr;
+  width:100%; min-height:28px; flex:none; pointer-events:none;
+}
+.comparison.reference-pair .comparison-labels b {
+  position:static; width:auto; height:auto; border-radius:0;
+  padding:7px 10px; font:700 12px/1.1 Arial,Helvetica,sans-serif;
+  letter-spacing:.02em; text-align:center;
+}
+.page-projects .project-card .comparison.reference-pair { height:auto; }
+@media(min-width:961px) {
+ body.page-home .hero { min-height:0; height:29.8vw; }
+ body.page-home .hero .hero-content { width:89%; padding:0; }
+ body.page-home .hero h1 { font-size:4.35vw; max-width:55%; line-height:1.05; }
+ body.page-home .hero-copy { font-size:1.83vw; max-width:44%; line-height:1.25; }
+ body.page-home .hero .eyebrow { font-size:1.4vw; font-weight:500; color:white; }
+ body.page-home .hero .btn { font-size:1.56vw; }
+ body.page-home .hero-overlay { background:linear-gradient(90deg,#10151660,transparent 65%); }
 }
