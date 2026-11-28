@@ -1,0 +1,65 @@
+/* Craftwell: understated motion, without layout or content changes. */
+@media (prefers-reduced-motion: no-preference) {
+  :root { scroll-behavior: smooth; }
+  @keyframes cw-rise {
+    from { opacity: .45; translate: 0 16px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+  @keyframes cw-hero-in {
+    from { opacity: .35; translate: 0 12px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+  @keyframes cw-photo-in {
+    from { scale: 1.025; }
+    to { scale: 1; }
+  }
+  @keyframes cw-menu-in {
+    from { opacity: .55; translate: 0 -4px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+  @keyframes cw-dialog-in {
+    from { opacity: .4; scale: .985; }
+    to { opacity: 1; scale: 1; }
+  }
+  .hero .hero-content > :is(.eyebrow, h1, .hero-copy, .hero-tagline, .hero-buttons) {
+    animation: cw-hero-in 520ms cubic-bezier(.22,.61,.36,1) both;
+  }
+  .hero .hero-content > h1 { animation-delay: 65ms; }
+  .hero .hero-content > :is(.hero-copy,.hero-tagline) { animation-delay: 120ms; }
+  .hero .hero-content > .hero-buttons { animation-delay: 170ms; }
+  .hero:not(.project-hero) > .hero-photo { animation: cw-photo-in 1100ms ease-out both; }
+  .cw-reveal-play {
+    animation: cw-rise 550ms cubic-bezier(.22,.61,.36,1) var(--cw-delay, 0ms) both;
+  }
+  .cw-reveal-play:focus-within,
+  .hero .hero-content > :focus-within { animation: none; }
+  .site-header .drop-toggle::before { transition: transform 180ms ease; }
+  .site-header #main-nav a, .footer-nav a { transition: color 180ms ease, background-color 180ms ease; }
+  .site-header .dropdown { animation: cw-menu-in 160ms ease-out both; }
+  .btn { transition: filter 200ms ease, transform 200ms ease, box-shadow 200ms ease; }
+  .btn .ico { transition: translate 200ms ease; }
+  .btn:active { transform: translateY(1px); }
+  .photo-dialog[open] { animation: cw-dialog-in 230ms ease-out both; }
+  .service-card, .project-card, .comparison, .feature-grid > *, .city-grid > *, .review-list article {
+    transition: box-shadow 220ms ease, translate 220ms ease, border-color 220ms ease;
+  }
+  .service-card img { transition: transform 500ms cubic-bezier(.22,.61,.36,1); }
+  .service-row > img, .timeline article > img { transition: scale 300ms ease; }
+  @media (hover: hover) and (pointer: fine) {
+    .service-card:hover, .project-card:not([hidden]):hover, .feature-grid > *:hover, .city-grid > *:hover {
+      translate: 0 -3px;
+      box-shadow: 0 7px 18px #12171924;
+    }
+    .comparison:hover { box-shadow: 0 5px 16px #0003; }
+    .service-row:hover > img, .timeline article:hover > img { scale: 1.012; }
+    .btn:hover .ico { translate: 2px 0; }
+    .btn:hover { box-shadow: 0 4px 12px #0002; }
+  }
+  @media (max-width: 960px) {
+    .site-header #main-nav.open { animation: cw-menu-in 200ms ease-out both; }
+    .site-header .nav-drop.open .dropdown { animation: cw-menu-in 180ms ease-out both; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-photo, .hero .hero-content > *, .cw-reveal-play, .site-header .dropdown, .photo-dialog[open] { animation: none !important; }
+}
